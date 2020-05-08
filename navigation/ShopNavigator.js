@@ -7,11 +7,13 @@ import { Platform } from "react-native";
 import ProductsOverviewScreen from "../screens/buying/ProductOverviewScreen";
 import ProductDetailScreen from "../screens/buying/ProductDetailScreen";
 import Colors from "../constants/Colors";
+import CartScreen from "../screens/buying/CartScreen";
 
 const ProductsNavigator = createStackNavigator(
   {
     ProductsOverview: ProductsOverviewScreen,
     ProductDetail: ProductDetailScreen,
+    Cart: CartScreen,
   },
   {
     defaultNavigationOptions: {
@@ -23,13 +25,13 @@ const ProductsNavigator = createStackNavigator(
           end={{ x: 1, y: 0 }}
         />
       ),
-      headerTintColor: "black",
+      headerTintColor: "#222",
       headerTitle: "Amazon.in",
       headerTitleStyle: {
         fontFamily: "roboto-bold",
       },
       headerBackTitleStyle: {
-        fontFamily: "roboto",
+        fontFamily: "roboto-regular",
       },
     },
   }
