@@ -8,10 +8,12 @@ import productReducer from "./store/reducers/productsReducer";
 import cartReducer from "./store/reducers/cart";
 
 import ShopNavigator from "./navigation/ShopNavigator";
+import orderReducer from "./store/reducers/orderReducer";
 
 const rootReducer = combineReducers({
   products: productReducer,
   cart: cartReducer,
+  orders: orderReducer,
 });
 
 const store = createStore(rootReducer);
